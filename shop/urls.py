@@ -10,6 +10,5 @@ urlpatterns = [
     url('portfolio', views.port, name='port'),
     url('about_us', views.about, name='about'),
     url('contacts', views.contacts, name='contacts'),
-    # url('base', views.base, name='base'),
 
 ]
