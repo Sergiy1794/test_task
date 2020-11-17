@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docu123ment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href={% static "/source/lib/slick/slick.min.css" %}>
+    <link rel="stylesheet" href={% static "/source/lib/OverlayScrollbars/OverlayScrollbars.min.css" %}>
+    <link rel="stylesheet" href={% static "/source/pages//services/index.css" %} />
+    <link rel="stylesheet" href={% static "/source/pages/services/index.css.map" %} />
+  </head>
+    <main class="overflow-y">
+      <div class="main_background "></div>
+        <div class="container">
+
+            </div>
+        </div>
+     
+  {% include "includes/service/ideas.html" %}
+  {% include "includes/service/fourstages.html" %}
+
+{% endblock %}

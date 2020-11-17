@@ -1,0 +1,137 @@
+.input {
+  width: 100%;
+  position: relative;
+  &-hint {
+    position: absolute;
+    top: 50%;
+    transform: translate(-10px, -50%);
+    right: 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: normal;
+  }
+  &_box {
+    position: relative;
+  }
+  &_label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    transition: 0.3s;
+    font-size: 16px;
+    line-height: 1;
+  }
+  &-field {
+    // border-radius: 6px;
+    border: none;
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 15px;
+    outline: none;
+    width: 100%;
+  }
+  &-grey {
+    & .input {
+      &-field {
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        background: #23262f;
+        &::placeholder {
+          font-size: 12px;
+          line-height: 14px;
+          color: #828282;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          background: #23262f;
+          -webkit-box-shadow: 0 0 0 50px #23262f inset,
+            20px 20px 50px rgba(0, 0, 0, 0.25);
+          -webkit-text-fill-color: #ffff;
+        }
+      }
+    }
+  }
+  &-black {
+    .input {
+      &_label {
+        color: #242321;
+      }
+      &-field {
+        color: #242321;
+        border-bottom: 1px solid #242321;
+        &:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0) inset;
+          -webkit-text-fill-color: #242321;
+        }
+        &:-webkit-autofill:focus {
+          -webkit-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0) inset;
+          -webkit-text-fill-color: #242321;
+        }
+      }
+    }
+  }
+  &-white {
+    .input {
+      &_label {
+        color: #fff;
+      }
+      &-field {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        &:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0) inset;
+          -webkit-text-fill-color: #fff;
+        }
+        &:-webkit-autofill:focus {
+          -webkit-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0) inset;
+          -webkit-text-fill-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.in-focus {
+  & .input_label {
+    top: -10px;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+}
+
+.is-error {
+  &.in-focus {
+    & .input_label {
+      color: #ff4b4b;
+    }
+  }
+  & .input {
+    &-field {
+      // border-bottom: 1px solid #ff4b4b;
+      color: #ff4b4b;
+    }
+    &_label {
+      color: #ff4b4b;
+    }
+  }
+
+  & label.error {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: #ff4b4b; 
+    left: 5px; 
+  }
+}
+label.error {
+  font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: #ff4b4b; 
+    left: 5px; 
+}

@@ -1,0 +1,21 @@
+.breadcrumbs {
+    display: flex;
+    &_item {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      & .separaror {
+        margin: 0 5px;
+      }
+      &.active {
+        color: #f1c86e;
+        & .separaror {
+          display: none;
+        }
+      }
+    }
+    &_wrap {
+      border-bottom: 1px solid #adb7d0;
+      border-top: 1px solid #adb7d0;
+    }
+  }

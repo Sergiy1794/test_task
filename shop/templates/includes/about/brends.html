@@ -1,0 +1,35 @@
+{% load i18n %}
+{% load static %}
+
+<div class="about_bg">
+              <img class="about_bg_img" src={% static "/source/img/about/aboutMainBGSVG.svg" %} alt="" srcset="">
+            </div>
+                        <div class="about_info">
+                          <div class="main">
+                            <div class="logo">
+                              <img src={% static "/source/img/about/bigLogoAbout.svg" %} alt="" srcset="">
+                            </div>
+                            <div class="info">
+                              <div class="title">{% trans "Група компаній Філігрань" %}</div>
+                              <div class="subtitle">{% trans "працює на ринку освітлення вже понад" %}</div>
+                             
+                            </div>
+                            <div class="year">
+                              <span>5</span>
+                              років
+                            </div>
+                          </div>
+                          <div class="footer">
+            <p> {% trans "Ми співпрацюємо з світовими брендами, такими як " %}<span>{% trans "Schreder, Lug, Abacus, Philips, Osram, Vossloh-schwabe" %}</span> тощо</p>
+                          </div>
+                        </div>
+                        <div class="about_partners">
+                          <ul>
+                            <li><img src={% static "/source/img/about/parntners_4.svg" %} alt="" srcset=""></li>
+                            <li><img src={% static "/source/img/about/parntners_2.svg" %} alt="" srcset=""></li>
+                            <li><img src={% static "/source/img/about/parntners_3.svg" %} alt="" srcset=""></li>
+                            <li><img src={% static "/source/img/about/parntners_5.svg" %} alt="" srcset=""></li>
+                            <li><img src={% static "/source/img/about/parntners_1.svg" %} alt="" srcset=""></li>
+                          </ul>
+                        </div>
+                      </div>

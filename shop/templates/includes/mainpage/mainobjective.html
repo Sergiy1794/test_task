@@ -1,0 +1,32 @@
+{% load i18n %}
+{% load static %}
+<div class="container my-50">
+
+  <div class="our_goal">
+    <div class="sections">
+      <img class="our_goal_logo" src={% static "/source/img/main_page/big_logo.svg" %} alt="">
+     <div class="sections_bg">
+       <img src={% static "/source/img/main_page/background_anderscor.svg" %} alt="">
+     </div>
+      <div class="our_goal_box">
+        <div class="our_goal_title  ">{% trans "Група компаній Філігрань" %}</div>
+        <div class="our_goal_text "> {% trans "працює на ринку освітлення вже понад" %}</div>
+        <div class="our_goal_year">
+          <div class="year">5</div>
+          <div class="text">{% trans "років" %}</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="sections">
+      <div class="our_goal_title our_goal_title-mod1 ">{% trans "Наша" %}</div>
+      <div class="our_goal_title our_goal_title-mod2"><span>{% trans "ГОЛОВНА" %}</span> {% trans "МЕТА" %}</div>
+      
+      <div class="form">
+        <div class="text"> – {% trans "втілити у життя всі побажання клієнта, його ідеї та бачення проекту задля отримання безкомпромісно якісного продукту та неперевершеного результату" %}</div>
+        <a href="" class="btn btn-yellow">{% trans "вбговорити проект" %}</a>
+        <img class="form_img" src={% static "/source/img/main_page/imag_light.png" %} alt="" srcset="">
+      </div>
+    </div>
+  </div>
+</div>

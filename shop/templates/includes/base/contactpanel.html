@@ -1,0 +1,81 @@
+{% load i18n %}
+{% load static %}
+
+<main class="">
+      <div class="main_background "></div>
+        <div class="container box_info">
+          <div class="sections"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1329734.8451925248!2d25.58094555!3d49.3873745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1600664476163!5m2!1suk!2sua" ></iframe></div>
+          <div class="sections">
+            <div class="box_info_form">
+
+                <form action="en/contacts" method="post" class="form form_info">
+                  <div class="form_main">
+                    <div class="input input-grey">
+                      <div class="input_box btn">
+              <input class="input-field  " type="text" id="contact_name" name="username"  placeholder="Имя" aria-invalid="true">
+                      </div>
+                    </div>
+                    <div   class="input input-grey">
+                      <div class="input_box btn" >
+                        <input class="input-field  " type="text" id="contact_phone" name="phone"   placeholder="+3 8(***) ***  - ****" aria-invalid="true">
+                      </div>
+                    </div>
+                    <div   class="input input-grey">
+                      <div class="input_box btn">
+                        <textarea class="input-field  "  id="contact_message" name="comment"   placeholder="Напишіть коментар"  ></textarea >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_footer">
+                    <div class="form_footer__control"><button class="btn btn-yellow" type="submit" >{% trans "Відправити" %} </button></div>
+                    {% csrf_token %}
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+        
+    </main>
+    <footer class="container">
+      <div class="box footer_container">
+        <div class="navbar_footer">
+          <div class="header ">
+            <div class="text">{% trans "Меню" %}</div>
+            <div class="icon"><img src="{% static "/source/svg_icon/arrow_short.svg" %} alt="" srcset=""></div>
+          </div>
+          <div class="main">
+            <a class="navbar_footer__item">{% trans "Контакти" %}</a>
+            <a class="navbar_footer__item">{% trans "Доставка та оплата" %}</a>
+            <a class="navbar_footer__item">{% trans "Умови повернення" %}</a>
+          </div>
+        </div>
+        <a class="social_link fasebook">
+          <div class="icon">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.71333 0.083374C2.59457 0.083374 0.0833588 2.59459 0.0833588 5.71334V25.2867C0.0833588 28.4055 2.59457 30.9167 5.71333 30.9167H16.3219V18.8628H13.1345V14.523H16.3219V10.8153C16.3219 7.90232 18.2052 5.22772 22.5435 5.22772C24.3 5.22772 25.5989 5.39635 25.5989 5.39635L25.4967 9.44901C25.4967 9.44901 24.172 9.43649 22.7265 9.43649C21.1621 9.43649 20.9112 10.1573 20.9112 11.354V14.523H25.621L25.4158 18.8628H20.9112V30.9167H25.2867C28.4054 30.9167 30.9166 28.4055 30.9166 25.2867V5.71338C30.9166 2.59462 28.4054 0.0834049 25.2867 0.0834049H5.7133L5.71333 0.083374Z" fill="#EEEEEE"/>
+            </svg>
+          </div>
+          <div class="name">{% trans "fasebook" %}</div>
+        </a>
+        <a class="social_link instagram">
+          <div class="icon">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.4959 10.359C12.665 10.359 10.3549 12.6692 10.3549 15.5C10.3549 18.3308 12.665 20.641 15.4959 20.641C18.3267 20.641 20.6368 18.3308 20.6368 15.5C20.6368 12.6692 18.3267 10.359 15.4959 10.359ZM30.915 15.5C30.915 13.3711 30.9342 11.2615 30.8147 9.13644C30.6951 6.66815 30.132 4.47755 28.3271 2.67261C26.5183 0.863819 24.3316 0.304597 21.8633 0.185039C19.7344 0.0654818 17.6248 0.0847653 15.4997 0.0847653C13.3708 0.0847653 11.2612 0.0654818 9.13617 0.185039C6.66788 0.304597 4.47727 0.867675 2.67234 2.67261C0.863544 4.4814 0.304323 6.66815 0.184765 9.13644C0.0652071 11.2653 0.0844907 13.375 0.0844907 15.5C0.0844907 17.625 0.0652071 19.7385 0.184765 21.8636C0.304323 24.3318 0.867401 26.5225 2.67234 28.3274C4.48113 30.1362 6.66788 30.6954 9.13617 30.815C11.2651 30.9345 13.3747 30.9152 15.4997 30.9152C17.6286 30.9152 19.7382 30.9345 21.8633 30.815C24.3316 30.6954 26.5222 30.1323 28.3271 28.3274C30.1359 26.5186 30.6951 24.3318 30.8147 21.8636C30.9381 19.7385 30.915 17.6289 30.915 15.5ZM15.4959 23.4101C11.1185 23.4101 7.58577 19.8774 7.58577 15.5C7.58577 11.1226 11.1185 7.58991 15.4959 7.58991C19.8732 7.58991 23.406 11.1226 23.406 15.5C23.406 19.8774 19.8732 23.4101 15.4959 23.4101ZM23.7299 9.1133C22.7079 9.1133 21.8826 8.28797 21.8826 7.26594C21.8826 6.24392 22.7079 5.41858 23.7299 5.41858C24.7519 5.41858 25.5773 6.24392 25.5773 7.26594C25.5776 7.50863 25.53 7.74899 25.4373 7.97326C25.3445 8.19753 25.2085 8.4013 25.0369 8.5729C24.8653 8.74451 24.6615 8.88057 24.4372 8.9733C24.213 9.06603 23.9726 9.11361 23.7299 9.1133Z" fill="#EEEEEE"/>
+            </svg>
+          </div>
+          <div class="name">{% trans "instagram" %}</div>
+        </a>
+        <a class="social_link starway">
+          <img src={% static "/source/svg_icon/starWay_logo.svg" %} alt="" srcset="">
+        </a>
+      </div>
+    </footer>
+    <script src={% static "/source/lib//jquery/index.js" %}></script>
+    <script src={% static "/source/lib/slick/slick.js" %}></script> 
+    <script src={% static "/source/lib/maskinput/maskinput.js" %}></script> 
+    <script src={% static "/source/lib/validation/validation.min.js" %}></script> 
+
+    <script src={% static "/source/pages/main/index.js.map" %}></script>
+    <script src={% static "/source/pages/main/index.js" %}></script>
+  </body>
+</html>

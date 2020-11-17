@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}about us{% endblock %}</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href={% static "/source/lib/slick/slick.min.css" %}>
+    <link rel="stylesheet" href={% static "/source/lib/OverlayScrollbars/OverlayScrollbars.min.css" %}>
+    <link rel="stylesheet" href={% static "/source/pages//about_us/index.css" %} />
+    <link rel="stylesheet" href={% static "/source/pages/about_us/index.css.map" %} />
+  </head>
+        <div class="container my-50 about_wraper">
+          <div class="about">
+            {% include "includes/about/brends.html" %}
+            <div class="about_footer">
+              <span>Наша продукція створена для освітлення  вулиць, скверів та парків, автосалонів, заправок, супермаркетів, житлових комплексів та інших комерційних та приватних об’єктів. 
+              Окрім цього, ми надаємо послуги проектування та візуалізації</span>
+            </div>
+            </div>
+            </div>
+            {% include "includes/about/productfor.html" %}
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load static %}
+<div class="container my-50">
+     <div class="projects">
+         <div class="projects_img">
+          <img class="projects_img_light" src={% static "/source/img/main_page/projects_img_light.png" %} alt="">
+          <div class="projects_img_bg">
+            <img src={% static "/source/img/main_page/background_anderscor.svg" %} alt="">
+          </div>
+           
+         </div>
+         <div class="projects_categories">
+            <div class="categories">
+                <a class="categorie__item">
+
+                    <img src={% static "/source/img/category/tuintafel-80-80-met-2-stoelen-mariotto_1 1.png" %} alt="">
+                
+                    <div class="categorie__item_text"><span>{% trans "Архітектурне освітлення" %}</div>
+                </a>
+                <a class="categorie__item ">
+                    <img src={% static "/source/img/category/tuintafel-80-80-met-2-stoelen-mariotto_1 1-1.png" %} alt="">
+                    
+                    <div class="categorie__item_text"><span>{% trans "Вуличне освітлення" %}</div>
+                </a>
+                <a class="categorie__item">
+                    <img src={% static "/source/img/category/tuintafel-80-80-met-2-stoelen-mariotto_1 1-2.png" %} alt="">
+                    <div class="categorie__item_text"><span>{% trans "Ландшафтне освітлення" %}</div>
+                </a>
+                <a class="categorie__item">
+                    <img src={% static "/source/img/category/tuintafel-80-80-met-2-stoelen-mariotto_1 1-3.png" %} alt="">
+                    
+                    <div class="categorie__item_text"><span>{% trans "Інтерєрне освітлення" %}</div>
+                </a>
+            </div>
+        </div>
+     </div>
+ </div>
