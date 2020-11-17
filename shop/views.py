@@ -8,8 +8,8 @@ from django.utils import translation
 
 def main(request):
 
-    photos = Product.objects.all().filter(available=True)[:3]
-    prodjects = OurProject.objects.all()[:1]
+    photos = Product.objects.all().filter(available=True)[:4]
+    prodjects = OurProject.objects.all()[:4]
     context = {
         'photos': photos,
         'prodjects': prodjects,
