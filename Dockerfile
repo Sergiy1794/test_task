@@ -7,4 +7,4 @@ COPY . /shop_project/
 RUN pip3 install -r requirements.txt
 
 
-CMD ["python", "gunicorn", "--bind", ":80", "--workers", "3", "my_shop.wsgi"]
+CMD ["gunicorn", "--bind", ":80", "--workers", "3", "my_shop.wsgi"]

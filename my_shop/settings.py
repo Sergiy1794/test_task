@@ -26,7 +26,15 @@ SECRET_KEY = '_@@@-9(0uadkmu+^y)8-5&u04xiaz+!8@e5#+z-9dq3xu33!1o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#local settings
 ALLOWED_HOSTS = ['0.0.0.0']
+
+
+#Docker and digitalocean setting
+# ALLOWED_HOSTS = [
+#     '165.227.134.225',
+#     'localhost',
+#     ]
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 ROSETTA_WSGI_AUTO_RELOAD = True
@@ -142,7 +150,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-#Email settiong
+#Email settiongs
 
 RECIPIENTS_EMAIL = ['sergiykov94@gmail.com']   # замените на свою почту
 DEFAULT_FROM_EMAIL = 'sergiykov94@gmail.com'  # замените на свою почту

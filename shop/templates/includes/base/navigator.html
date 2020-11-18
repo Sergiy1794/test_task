@@ -77,8 +77,8 @@
               <!-- Menu -->
 
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="/uk/{{ request.get_full_path | cut:'/en/' }}">УКР</a>
-                <a class="dropdown-item" href="/en/ {{ request.get_full_path | cut:'/ua/' }}">ENG</a>
+                <a class="dropdown-item" href="/uk/{{ request.get | cut:'/en/' }}">УКР</a>
+                <a class="dropdown-item" href="/en/{{ request.get | cut:'/ua/' }}">ENG</a>
             </li>
           </div>
 </form>

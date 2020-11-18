@@ -8,11 +8,11 @@
           <div class="sections">
             <div class="box_info_form">
 
-                <form action="en/contacts" method="post" class="form form_info">
+                <form action="/en/contacts/" method="post" class="form form_info">
                   <div class="form_main">
                     <div class="input input-grey">
                       <div class="input_box btn">
-              <input class="input-field  " type="text" id="contact_name" name="username"  placeholder="Имя" aria-invalid="true">
+              <input class="input-field  " type="text" id="contact_name" name="username"  placeholder="{% trans "Имя" %}" aria-invalid="true">
                       </div>
                     </div>
                     <div   class="input input-grey">
@@ -22,7 +22,7 @@
                     </div>
                     <div   class="input input-grey">
                       <div class="input_box btn">
-                        <textarea class="input-field  "  id="contact_message" name="comment"   placeholder="Напишіть коментар"  ></textarea >
+                        <textarea class="input-field  "  id="contact_message" name="comment"   placeholder="{% trans "Напишіть коментар" %}"  ></textarea >
                       </div>
                     </div>
                   </div>
@@ -55,7 +55,7 @@
               <path d="M5.71333 0.083374C2.59457 0.083374 0.0833588 2.59459 0.0833588 5.71334V25.2867C0.0833588 28.4055 2.59457 30.9167 5.71333 30.9167H16.3219V18.8628H13.1345V14.523H16.3219V10.8153C16.3219 7.90232 18.2052 5.22772 22.5435 5.22772C24.3 5.22772 25.5989 5.39635 25.5989 5.39635L25.4967 9.44901C25.4967 9.44901 24.172 9.43649 22.7265 9.43649C21.1621 9.43649 20.9112 10.1573 20.9112 11.354V14.523H25.621L25.4158 18.8628H20.9112V30.9167H25.2867C28.4054 30.9167 30.9166 28.4055 30.9166 25.2867V5.71338C30.9166 2.59462 28.4054 0.0834049 25.2867 0.0834049H5.7133L5.71333 0.083374Z" fill="#EEEEEE"/>
             </svg>
           </div>
-          <div class="name">{% trans "fasebook" %}</div>
+          <div class="name">{% trans "facebook" %}</div>
         </a>
         <a class="social_link instagram">
           <div class="icon">
