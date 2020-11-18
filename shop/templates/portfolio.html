@@ -3,12 +3,8 @@
 {% load i18n %}
 {% block content %}
 
-  <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<title>{% block title %} Portfolio{% endblock %}</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -39,7 +35,6 @@
     <script src={% static "/source/lib/fancybox/jquery.fancybox.min.js" %}></script>
     <script src={% static "/source/pages/portfolio/index.js.map" %}></script>
     <script src={% static "/source/pages/portfolio/index.js" %}></script>
-  </body>
-</html>
+
 
 {% endblock %}

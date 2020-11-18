@@ -9,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=postgres
   web:
     build: .
-    command: gunicorn --bind :80 --workers 3 my_shop.wsgi
+    # command: gunicorn --bind :80 --workers 3 my_shop.wsgi
     volumes:
       - .:/shop_project
     ports:

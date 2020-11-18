@@ -3,10 +3,7 @@
 {% load static %}
 {% load i18n %}
 {% block content %}
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<title>{% block title %} OurContacts{% endblock %}</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -15,8 +12,6 @@
     <link rel="stylesheet" href={% static "/source/lib/OverlayScrollbars/OverlayScrollbars.min.css" %}>
     <link rel="stylesheet" href={% static "/source/pages//contacts/index.css" %} />
     <link rel="stylesheet" href={% static "/source/pages/contacts/index.css.map" %} />
-  </head>
-
 
     <main class="overflow-y">
       <div class="main_background "></div>
@@ -62,7 +57,7 @@
 
 
 
-                <form action="/en/contacts" method="post" class="form form_info">
+                <form action="/en/contacts/" method="post" class="form form_info">
                   <div class="form_main">
                     <div class="input input-grey">
                       <div class="input_box btn">
