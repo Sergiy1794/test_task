@@ -4,16 +4,16 @@
 {% block content %}
 
 <title>{% block title %} Portfolio{% endblock %}</title>
-
+{% block styles%}
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href={% static "/source/lib/slick/slick.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/lib/fancybox/jquery.fancybox.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/pages//portfolio/index.css" %} />
-    <link rel="stylesheet" href={% static "/source/pages/portfolio/index.css.map" %} />
-  </head>
+    <link rel="stylesheet" href="/static/source/lib/slick/slick.min.css">
+    <link rel="stylesheet" href="/static/source/lib/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/static/source/pages/portfolio/index.css" />
+    <link rel="stylesheet" href="/static/source/pages/portfolio/index.css.map" />
+{% endblock styles%}
 
     <main class="overflow-y">
       <div class="main_background "></div>
@@ -29,12 +29,12 @@
         </div>
      
        {% include "includes/portfolio/port.html" %}
-       
-    <script src={% static "/source/lib//jquery/index.js" %}></script>
-    <script src={% static "/source/lib/slick/slick.min.js" %}></script> 
-    <script src={% static "/source/lib/fancybox/jquery.fancybox.min.js" %}></script>
-    <script src={% static "/source/pages/portfolio/index.js.map" %}></script>
-    <script src={% static "/source/pages/portfolio/index.js" %}></script>
-
-
 {% endblock %}
+{% block scripts %}
+    <script src="/static/source/lib/jquery/index.js"></script>
+    <script src="/static/source/lib/slick/slick.min.js"></script> 
+    <script src="/static/source/lib/fancybox/jquery.fancybox.min.js" ></script>
+    <script src="/static/source/pages/portfolio/index.js.map"></script>
+    <script src="/static/source/pages/portfolio/index.js" ></script>
+{% endblock scripts %}
+

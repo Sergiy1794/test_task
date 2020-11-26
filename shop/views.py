@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Product, Feedback, OurProject
+from .models import Product, Feedback, Project
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
@@ -9,10 +9,10 @@ from django.utils import translation
 def main(request):
 
     photos = Product.objects.all().filter(available=True)[:4]
-    prodjects = OurProject.objects.all()[:4]
+    projects = Project.objects.all()[:4]
     context = {
         'photos': photos,
-        'prodjects': prodjects,
+        'projects': projects,
     }
     return render(request, 'index.html', context)
 
@@ -39,11 +39,11 @@ def contacts(request):
 
 
 
-def poslugy(request):
+def services(request):
 
     return render(request, 'services.html', {})
 
-def port(request):
+def portfolio(request):
 
     return render(request, 'portfolio.html', {})
 

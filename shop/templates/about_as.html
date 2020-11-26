@@ -3,14 +3,16 @@
 {% load i18n %}
 {% block content %}
 <title>{% block title %} AboutUS{% endblock %}</title>
+{% block styles%}
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href={% static "/source/lib/slick/slick.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/lib/OverlayScrollbars/OverlayScrollbars.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/pages//about_us/index.css" %} />
-    <link rel="stylesheet" href={% static "/source/pages/about_us/index.css.map" %} />
+    <link rel="stylesheet" href="/static/source/lib/slick/slick.min.css">
+    <link rel="stylesheet" href="/static/source/lib/OverlayScrollbars/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="/static/source/pages/about_us/index.css"/>
+    <link rel="stylesheet" href="/static/source/pages/about_us/index.css.map" />
+{% endblock styles%}
         <div class="container my-50 about_wraper">
           <div class="about">
             {% include "includes/about/brends.html" %}

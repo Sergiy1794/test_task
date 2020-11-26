@@ -19,10 +19,10 @@ class Feedback(models.Model):
     comment = models.TextField(max_length = 200)
 
 
-class OurProject(models.Model):
+class Project(models.Model):
 
     title = models.CharField(max_length = 50)
-    imageproject = models.ImageField(upload_to = 'products/', blank=True)
+    image = models.ImageField(upload_to = 'products/', blank=True)
 
     def __str__(self):
         return self.title

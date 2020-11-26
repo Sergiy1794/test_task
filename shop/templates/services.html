@@ -3,15 +3,16 @@
 {% load static %}
 {% block content %}
 <title>{% block title %} OurServices{% endblock %}</title>
+{% block styles %}
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href={% static "/source/lib/slick/slick.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/lib/OverlayScrollbars/OverlayScrollbars.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/pages//services/index.css" %} />
-    <link rel="stylesheet" href={% static "/source/pages/services/index.css.map" %} />
-  </head>
+    <link rel="stylesheet" href="/static/source/lib/slick/slick.min.css" >
+    <link rel="stylesheet" href="/static/source/lib/OverlayScrollbars/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="/static/source/pages/services/index.css">
+    <link rel="stylesheet" href="/static/source/pages/services/index.css.map" >
+{% endblock styles%}
     <main class="overflow-y">
       <div class="main_background "></div>
         <div class="container">

@@ -4,15 +4,17 @@
 {% load i18n %}
 {% block content %}
 <title>{% block title %} OurContacts{% endblock %}</title>
+
+{% block styles %}
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href={% static "/source/lib/slick/slick.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/lib/OverlayScrollbars/OverlayScrollbars.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/pages//contacts/index.css" %} />
-    <link rel="stylesheet" href={% static "/source/pages/contacts/index.css.map" %} />
-
+    <link rel="stylesheet" href="/static/source/lib/slick/slick.min.css">
+    <link rel="stylesheet" href="/static/source/lib/OverlayScrollbars/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="/static/source/pages/contacts/index.css" />
+    <link rel="stylesheet" href="/static/source/pages/contacts/index.css.map"/>
+{% endblock styles%}
     <main class="overflow-y">
       <div class="main_background "></div>
         <div class="container">
@@ -36,11 +38,11 @@
               <div class="contact__box_info">
                
                 <a class="contact__link" href="">
-                  <div class="icon"><img src={% static "/source/svg_icon/map_marker.svg" %} alt="" srcset=""></div>
+                  <div class="icon"><img src="/static/source/svg_icon/map_marker.svg" alt="" srcset=""></div>
                   <div class="text">{% trans "46016 м. Тернопіль, вул. Євгена Коновальця, 9/1" %}</div>
                 </a>
                 <div class="contact__link">
-                  <div class="icon"><img src={% static "/source/svg_icon/phone.svg" %} alt="" srcset=""></div>
+                  <div class="icon"><img src="/static/source/svg_icon/phone.svg" alt="" srcset=""></div>
                   <div class="contact__link_box"> 
                     <a href="tel:+38(096) 960 90 90">   +38(096) 960 90 90</a> 
                    <a href="tel:+38(096) 960 90 90">   +38(096) 960 90 90</a>
@@ -48,7 +50,7 @@
                   
                 </div>
                 <a class="contact__link" href="">
-                  <div class="icon"><img src={% static "/ource/svg_icon/mail.svg" %} alt="" srcset=""></div>
+                  <div class="icon"><img src="/static/source/svg_icon/mail.svg" alt="" srcset=""></div>
                   <div class="text">info@mrhome.com.ua </div>
   
                 </a>
@@ -61,7 +63,7 @@
                   <div class="form_main">
                     <div class="input input-grey">
                       <div class="input_box btn">
-              <input class="input-field  " type="text" id="contact_name" name="username"  placeholder="Имя" aria-invalid="true">
+              <input class="input-field  " type="text" id="contact_name" name="username"  placeholder="{% trans "Имя" %}" aria-invalid="true">
                       </div>
                     </div>
                     <div   class="input input-grey">
@@ -71,7 +73,7 @@
                     </div>
                     <div   class="input input-grey">
                       <div class="input_box btn">
-                        <textarea class="input-field  "  id="contact_message" name="comment"   placeholder="Напишіть коментар"  ></textarea >
+                        <textarea class="input-field  "  id="contact_message" name="comment"   placeholder="{% trans "Напишіть коментар"  %}"></textarea >
                       </div>
                     </div>
                   </div>
@@ -89,18 +91,17 @@
           </div>
           </div>
           <div class="contact_sections_img">
-            <img src={% static "/source/img/contact/mainPhoto.png" %} alt="" srcset="">
+            <img src="/static/source/img/contact/mainPhoto.png" alt="" srcset="">
           </div>
 
         </div>
       </div>
 
-
-    <script src={% static "/source/lib//jquery/index.js" %}></script>
-    <script src={% static "/source/lib/slick/slick.min.js" %}></script>
-    <script src={% static "/source/lib/OverlayScrollbars/OverlayScrollbars.min.js" %}></script>
-    <script src={% static "/source/pages/contacts/index.js.map" %}></script>
-    <script src={% static "/source/pages/contacts/index.js" %}></script>
-  </body>
-</html>
+{% block scripts %}
+    <script src="/static/source/lib/jquery/index.js"></script>
+    <script src="/static/source/lib/slick/slick.min.js"></script>
+    <script src="/static/source/lib/OverlayScrollbars/OverlayScrollbars.min.js"></script>
+    <script src="/static/source/pages/contacts/index.js.map"></script>
+    <script src="/static/source/pages/contacts/index.js"></script>
+{% endblock scripts %}
 {% endblock %}

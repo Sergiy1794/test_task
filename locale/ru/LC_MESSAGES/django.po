@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-15 23:46+0200\n"
+"POT-Creation-Date: 2020-11-24 17:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,320 +20,349 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: shop/templates/about_as.html:29 shop/templates/index.html:324
+#: shop/templates/contact.html:32
+msgid "Наші контакти"
+msgstr ""
+
+#: shop/templates/contact.html:40
+msgid "46016 м. Тернопіль, вул. Євгена Коновальця, 9/1"
+msgstr ""
+
+#: shop/templates/contact.html:64
+#: shop/templates/includes/base/contactpanel.html:15
+msgid "Имя"
+msgstr ""
+
+#: shop/templates/contact.html:74
+#: shop/templates/includes/base/contactpanel.html:25
+msgid "Напишіть коментар"
+msgstr ""
+
+#: shop/templates/contact.html:79
+#: shop/templates/includes/base/contactpanel.html:30
+msgid "Відправити"
+msgstr ""
+
+#: shop/templates/includes/about/brends.html:13
+#: shop/templates/includes/mainpage/mainobjective.html:12
 msgid "Група компаній Філігрань"
 msgstr ""
 
-#: shop/templates/about_as.html:30 shop/templates/index.html:325
+#: shop/templates/includes/about/brends.html:14
+#: shop/templates/includes/mainpage/mainobjective.html:13
 msgid "працює на ринку освітлення вже понад"
 msgstr ""
 
-#: shop/templates/about_as.html:39 shop/templates/index.html:349
+#: shop/templates/includes/about/brends.html:23
+#: shop/templates/includes/mainpage/ourbrand.html:5
 msgid "Ми співпрацюємо з світовими брендами, такими як "
 msgstr ""
 
-#: shop/templates/about_as.html:39
+#: shop/templates/includes/about/brends.html:23
 msgid "Schreder, Lug, Abacus, Philips, Osram, Vossloh-schwabe"
 msgstr ""
 
-#: shop/templates/about_as.html:66 shop/templates/base.html:56
-#: shop/templates/base.html:245 shop/templates/base.html:268
-#: shop/templates/index.html:223
+#: shop/templates/includes/about/productfor.html:12
+#: shop/templates/includes/base/navigator.html:43
+#: shop/templates/includes/base/navigator.html:239
+#: shop/templates/includes/base/navigator.html:262
+#: shop/templates/includes/mainpage/items.html:18
 msgid "Архітектурне освітлення"
 msgstr ""
 
-#: shop/templates/about_as.html:71 shop/templates/base.html:57
-#: shop/templates/base.html:246 shop/templates/base.html:269
-#: shop/templates/index.html:228
+#: shop/templates/includes/about/productfor.html:17
+#: shop/templates/includes/base/navigator.html:44
+#: shop/templates/includes/base/navigator.html:240
+#: shop/templates/includes/base/navigator.html:263
+#: shop/templates/includes/mainpage/items.html:23
 msgid "Вуличне освітлення"
 msgstr ""
 
-#: shop/templates/about_as.html:75 shop/templates/base.html:58
-#: shop/templates/base.html:247 shop/templates/base.html:270
-#: shop/templates/index.html:232
+#: shop/templates/includes/about/productfor.html:21
+#: shop/templates/includes/base/navigator.html:45
+#: shop/templates/includes/base/navigator.html:241
+#: shop/templates/includes/base/navigator.html:264
+#: shop/templates/includes/mainpage/items.html:27
 msgid "Ландшафтне освітлення"
 msgstr ""
 
-#: shop/templates/about_as.html:80 shop/templates/base.html:59
-#: shop/templates/base.html:248 shop/templates/base.html:271
-#: shop/templates/index.html:237
+#: shop/templates/includes/about/productfor.html:26
+#: shop/templates/includes/base/navigator.html:46
+#: shop/templates/includes/base/navigator.html:242
+#: shop/templates/includes/base/navigator.html:265
+#: shop/templates/includes/mainpage/items.html:32
 msgid "Інтерєрне освітлення"
 msgstr ""
 
-#: shop/templates/about_as.html:85 shop/templates/index.html:334
+#: shop/templates/includes/about/productfor.html:31
+#: shop/templates/includes/mainpage/mainobjective.html:22
 msgid "Наша"
 msgstr ""
 
-#: shop/templates/about_as.html:86
+#: shop/templates/includes/about/productfor.html:32
 msgid "Наголовна мета"
 msgstr ""
 
-#: shop/templates/about_as.html:88 shop/templates/index.html:338
+#: shop/templates/includes/about/productfor.html:34
+#: shop/templates/includes/mainpage/mainobjective.html:26
 msgid ""
 "втілити у життя всі побажання клієнта, його ідеї та бачення проекту задля "
 "отримання безкомпромісно якісного продукту та неперевершеного результату"
 msgstr ""
 
-#: shop/templates/about_as.html:92 shop/templates/portfolio.html:60
-#: shop/templates/portfolio.html:123 shop/templates/portfolio.html:186
-#: shop/templates/portfolio.html:249
+#: shop/templates/includes/about/productfor.html:38
+#: shop/templates/includes/portfolio/port.html:24
+#: shop/templates/includes/portfolio/port.html:87
+#: shop/templates/includes/portfolio/port.html:150
+#: shop/templates/includes/portfolio/port.html:213
 msgid "Обговорити проект"
 msgstr ""
 
-#: shop/templates/base.html:43
-msgid "Головна"
-msgstr ""
-
-#: shop/templates/base.html:48
-msgid "Каталог"
-msgstr ""
-
-#: shop/templates/base.html:63
-msgid "Послуги"
-msgstr ""
-
-#: shop/templates/base.html:66
-msgid "Портфоліо "
-msgstr ""
-
-#: shop/templates/base.html:69 shop/templates/base.html:282
-msgid "Про нас "
-msgstr ""
-
-#: shop/templates/base.html:72
-msgid "Блог"
-msgstr ""
-
-#: shop/templates/base.html:75 shop/templates/base.html:310
-msgid "Контакти "
-msgstr ""
-
-#: shop/templates/base.html:131
-msgid "Особистий кабінет"
-msgstr ""
-
-#: shop/templates/base.html:144
-msgid "Забули пароль"
-msgstr ""
-
-#: shop/templates/base.html:147
-msgid "Увійти"
-msgstr ""
-
-#: shop/templates/base.html:148
-msgid "Новий клієнт?"
-msgstr ""
-
-#: shop/templates/base.html:159
-msgid "Реєcтрація"
-msgstr ""
-
-#: shop/templates/base.html:187
-msgid "Зареєструватись"
-msgstr ""
-
-#: shop/templates/base.html:188
-msgid "Увіти"
-msgstr ""
-
-#: shop/templates/base.html:234
-msgid "Каталог "
-msgstr ""
-
-#: shop/templates/base.html:254
-msgid "Послуги "
-msgstr ""
-
-#: shop/templates/base.html:277
-msgid "Портфоліо"
-msgstr ""
-
-#: shop/templates/base.html:288
-msgid "Мова"
-msgstr ""
-
-#: shop/templates/base.html:357
-msgid "Залишились запитання?"
-msgstr ""
-
-#: shop/templates/base.html:383 shop/templates/index.html:44
-#: shop/templates/index.html:72 shop/templates/index.html:100
-msgid "Зателефонуємо через 5 хв"
-msgstr ""
-
-#: shop/templates/base.html:386 shop/templates/contact.html:85
-msgid "Відправити"
-msgstr ""
-
-#: shop/templates/base.html:398
+#: shop/templates/includes/base/contactpanel.html:43
 msgid "Меню"
 msgstr ""
 
-#: shop/templates/base.html:402
+#: shop/templates/includes/base/contactpanel.html:47
 msgid "Контакти"
 msgstr ""
 
-#: shop/templates/base.html:403
+#: shop/templates/includes/base/contactpanel.html:48
 msgid "Доставка та оплата"
 msgstr ""
 
-#: shop/templates/base.html:404
+#: shop/templates/includes/base/contactpanel.html:49
 msgid "Умови повернення"
 msgstr ""
 
-#: shop/templates/base.html:413
-msgid "fasebook"
+#: shop/templates/includes/base/contactpanel.html:58
+msgid "facebook"
 msgstr ""
 
-#: shop/templates/base.html:421
+#: shop/templates/includes/base/contactpanel.html:66
 msgid "instagram"
 msgstr ""
 
-#: shop/templates/contact.html:38
-msgid "Наші контакти"
+#: shop/templates/includes/base/navigator.html:30
+msgid "Головна"
 msgstr ""
 
-#: shop/templates/contact.html:46
-msgid "м. Тернопіль, вул. Євгена Коновальця, 9/1"
+#: shop/templates/includes/base/navigator.html:35
+msgid "Каталог"
 msgstr ""
 
-#: shop/templates/contact.html:80
-msgid "Напишіть коментар "
+#: shop/templates/includes/base/navigator.html:50
+msgid "Послуги"
 msgstr ""
 
-#: shop/templates/index.html:28 shop/templates/index.html:89
-#: shop/templates/index.html:117
+#: shop/templates/includes/base/navigator.html:53
+msgid "Портфоліо "
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:56
+#: shop/templates/includes/base/navigator.html:276
+msgid "Про нас "
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:59
+msgid "Блог"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:62
+#: shop/templates/includes/base/navigator.html:304
+msgid "Контакти "
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:125
+msgid "Особистий кабінет"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:138
+msgid "Забули пароль"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:141
+msgid "Увійти"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:142
+msgid "Новий клієнт?"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:153
+msgid "Реєcтрація"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:181
+msgid "Зареєструватись"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:182
+msgid "Увіти"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:228
+msgid "Каталог "
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:248
+msgid "Послуги "
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:271
+msgid "Портфоліо"
+msgstr ""
+
+#: shop/templates/includes/base/navigator.html:282
+msgid "Мова"
+msgstr ""
+
+#: shop/templates/includes/mainpage/bestoffer.html:6
+msgid "Найкращі"
+msgstr ""
+
+#: shop/templates/includes/mainpage/bestoffer.html:6
+msgid "пропозиції"
+msgstr ""
+
+#: shop/templates/includes/mainpage/bestoffer.html:9
+msgid "Далі"
+msgstr ""
+
+#: shop/templates/includes/mainpage/bestoffer.html:22
+msgid "В наявності"
+msgstr ""
+
+#: shop/templates/includes/mainpage/bestoffer.html:27
+msgid "Новинка"
+msgstr ""
+
+#: shop/templates/includes/mainpage/bestoffer.html:28
+msgid "Розпродаж"
+msgstr ""
+
+#: shop/templates/includes/mainpage/bestoffer.html:35
+msgid "Переглянути"
+msgstr ""
+
+#: shop/templates/includes/mainpage/lighting.html:12
+#: shop/templates/includes/mainpage/lighting.html:73
+#: shop/templates/includes/mainpage/lighting.html:101
 msgid "Освітлення фасадів"
 msgstr ""
 
-#: shop/templates/index.html:29 shop/templates/index.html:62
-#: shop/templates/index.html:90 shop/templates/index.html:118
+#: shop/templates/includes/mainpage/lighting.html:13
+#: shop/templates/includes/mainpage/lighting.html:46
+#: shop/templates/includes/mainpage/lighting.html:74
+#: shop/templates/includes/mainpage/lighting.html:102
 msgid ""
 "Наша продукція створена для освітлення  вулиць, скверів та парків, "
 "автосалонів, заправок, супермаркетів, житлових комплексів та інших "
 "комерційних та приватних об’єктів."
 msgstr ""
 
-#: shop/templates/index.html:31 shop/templates/index.html:64
-#: shop/templates/index.html:92 shop/templates/index.html:120
+#: shop/templates/includes/mainpage/lighting.html:15
+#: shop/templates/includes/mainpage/lighting.html:48
+#: shop/templates/includes/mainpage/lighting.html:76
+#: shop/templates/includes/mainpage/lighting.html:104
 msgid "Детальніше"
 msgstr ""
 
-#: shop/templates/index.html:61
+#: shop/templates/includes/mainpage/lighting.html:28
+#: shop/templates/includes/mainpage/lighting.html:56
+#: shop/templates/includes/mainpage/lighting.html:84
+msgid "Зателефонуємо через 5 хв"
+msgstr ""
+
+#: shop/templates/includes/mainpage/lighting.html:45
 msgid "Освітлення"
 msgstr ""
 
-#: shop/templates/index.html:61
+#: shop/templates/includes/mainpage/lighting.html:45
 msgid "фасадів"
 msgstr ""
 
-#: shop/templates/index.html:128
+#: shop/templates/includes/mainpage/lighting.html:112
 msgid "ателефонуємо через 5 хв"
 msgstr ""
 
-#: shop/templates/index.html:167
-msgid "Найкращі"
-msgstr ""
-
-#: shop/templates/index.html:167
-msgid "пропозиції"
-msgstr ""
-
-#: shop/templates/index.html:170
-msgid "Далі"
-msgstr ""
-
-#: shop/templates/index.html:184
-msgid "В наявності"
-msgstr ""
-
-#: shop/templates/index.html:189
-msgid "Новинка"
-msgstr ""
-
-#: shop/templates/index.html:190
-msgid "Розпродаж"
-msgstr ""
-
-#: shop/templates/index.html:197
-msgid "Переглянути"
-msgstr ""
-
-#: shop/templates/index.html:248
-msgid "Наші"
-msgstr ""
-
-#: shop/templates/index.html:248
-msgid "проекти"
-msgstr ""
-
-#: shop/templates/index.html:251
-msgid "Всі роботи"
-msgstr ""
-
-#: shop/templates/index.html:266 shop/templates/index.html:272
-#: shop/templates/portfolio.html:66 shop/templates/portfolio.html:120
-#: shop/templates/portfolio.html:129 shop/templates/portfolio.html:183
-#: shop/templates/portfolio.html:192 shop/templates/portfolio.html:246
-#: shop/templates/portfolio.html:255 shop/templates/portfolio.html:309
-msgid "Монастериський замок"
-msgstr ""
-
-#: shop/templates/index.html:278
-msgid "Парк національно відродження"
-msgstr ""
-
-#: shop/templates/index.html:284
-msgid "Мережа магазинів"
-msgstr ""
-
-#: shop/templates/index.html:293
-msgid "Ми надаємо послуги <span>проектування та візуалізації:"
-msgstr ""
-
-#: shop/templates/index.html:298 shop/templates/index.html:302
-#: shop/templates/index.html:306 shop/templates/index.html:310
-msgid "внутрішнього"
-msgstr ""
-
-#: shop/templates/index.html:298
-msgid " освітлення"
-msgstr ""
-
-#: shop/templates/index.html:302 shop/templates/index.html:306
-#: shop/templates/index.html:310
-msgid "освітлення"
-msgstr ""
-
-#: shop/templates/index.html:328
+#: shop/templates/includes/mainpage/mainobjective.html:16
 msgid "років"
 msgstr ""
 
-#: shop/templates/index.html:335
+#: shop/templates/includes/mainpage/mainobjective.html:23
 msgid "ГОЛОВНА"
 msgstr ""
 
-#: shop/templates/index.html:335
+#: shop/templates/includes/mainpage/mainobjective.html:23
 msgid "МЕТА"
 msgstr ""
 
-#: shop/templates/index.html:339
+#: shop/templates/includes/mainpage/mainobjective.html:27
 msgid "вбговорити проект"
 msgstr ""
 
-#: shop/templates/portfolio.html:44
+#: shop/templates/includes/mainpage/ourproject.html:8
+msgid "Наші"
+msgstr ""
+
+#: shop/templates/includes/mainpage/ourproject.html:8
+msgid "проекти"
+msgstr ""
+
+#: shop/templates/includes/mainpage/ourproject.html:11
+msgid "Всі роботи"
+msgstr ""
+
+#: shop/templates/includes/mainpage/poslugy.html:5
+msgid "Ми надаємо послуги <span>проектування та візуалізації:"
+msgstr ""
+
+#: shop/templates/includes/mainpage/poslugy.html:10
+#: shop/templates/includes/mainpage/poslugy.html:14
+#: shop/templates/includes/mainpage/poslugy.html:18
+#: shop/templates/includes/mainpage/poslugy.html:22
+msgid "внутрішнього"
+msgstr ""
+
+#: shop/templates/includes/mainpage/poslugy.html:10
+msgid " освітлення"
+msgstr ""
+
+#: shop/templates/includes/mainpage/poslugy.html:14
+#: shop/templates/includes/mainpage/poslugy.html:18
+#: shop/templates/includes/mainpage/poslugy.html:22
+msgid "освітлення"
+msgstr ""
+
+#: shop/templates/includes/portfolio/port.html:8
 msgid "Наші проекти"
 msgstr ""
 
-#: shop/templates/portfolio.html:55
+#: shop/templates/includes/portfolio/port.html:19
 msgid "Назад"
 msgstr ""
 
-#: shop/templates/portfolio.html:112 shop/templates/portfolio.html:113
-#: shop/templates/portfolio.html:175 shop/templates/portfolio.html:176
-#: shop/templates/portfolio.html:238 shop/templates/portfolio.html:239
-#: shop/templates/portfolio.html:301 shop/templates/portfolio.html:302
-#: shop/templates/portfolio.html:326 shop/templates/services.html:39
+#: shop/templates/includes/portfolio/port.html:30
+#: shop/templates/includes/portfolio/port.html:84
+#: shop/templates/includes/portfolio/port.html:93
+#: shop/templates/includes/portfolio/port.html:147
+#: shop/templates/includes/portfolio/port.html:156
+#: shop/templates/includes/portfolio/port.html:210
+#: shop/templates/includes/portfolio/port.html:219
+#: shop/templates/includes/portfolio/port.html:273
+msgid "Монастериський замок"
+msgstr ""
+
+#: shop/templates/includes/portfolio/port.html:76
+#: shop/templates/includes/portfolio/port.html:77
+#: shop/templates/includes/portfolio/port.html:139
+#: shop/templates/includes/portfolio/port.html:140
+#: shop/templates/includes/portfolio/port.html:202
+#: shop/templates/includes/portfolio/port.html:203
+#: shop/templates/includes/portfolio/port.html:265
+#: shop/templates/includes/portfolio/port.html:266
+#: shop/templates/includes/portfolio/port.html:290
+#: shop/templates/includes/service/ideas.html:12
 msgid ""
 "Дивлячись на креслення, плани, схеми, неможливо точно уявити собі практичний "
 "підсумок роботи, але ми вміємо вдало візуалізувати весь процес так, щоб Ви "
@@ -343,70 +372,70 @@ msgid ""
 "одразу на ваших очах! І не потрібно буде довго очікувати на правки."
 msgstr ""
 
-#: shop/templates/portfolio.html:314
+#: shop/templates/includes/portfolio/port.html:278
 msgid "Вперед"
 msgstr ""
 
-#: shop/templates/portfolio.html:327
+#: shop/templates/includes/portfolio/port.html:291
 msgid ""
 "До речі, зміни, які будуть вноситися до макету, безкоштовні. Ми вважаємо, що "
 "краще втілити всі побажання клієнта ще до того, як розпочнеться монтаж. "
 "Задоволений замовник – дуже цінна винагорода."
 msgstr ""
 
-#: shop/templates/services.html:33
+#: shop/templates/includes/service/fourstages.html:5
+msgid "Робота ділиться"
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:5
+msgid "на чотири етапи:"
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:27
+msgid "відображення всіх побажань "
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:28
+msgid "клієнта у віртуальному просторі"
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:51
+msgid "погодження"
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:53
+msgid "макету"
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:76
+msgid "редагування та внесення правок"
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:78
+msgid "після узгодження  з замовником"
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:101
+msgid "реалізація та втілення "
+msgstr ""
+
+#: shop/templates/includes/service/fourstages.html:102
+msgid "проекту у життя"
+msgstr ""
+
+#: shop/templates/includes/service/ideas.html:6
 msgid "Ви подаєте нам ідею"
 msgstr ""
 
-#: shop/templates/services.html:33
+#: shop/templates/includes/service/ideas.html:6
 msgid "а ми втілюємо її – все просто!"
 msgstr ""
 
-#: shop/templates/services.html:41
+#: shop/templates/includes/service/ideas.html:14
 msgid ""
 "До речі, зміни, які будуть вноситися до макету, безкоштовні. Ми вважаємо, що "
 "краще втілити всі побажання клієнта ще до того, як розпочнеться монтаж. "
 "Задоволений замовник – дуже цінна винагорода. "
-msgstr ""
-
-#: shop/templates/services.html:50
-msgid "Робота ділиться"
-msgstr ""
-
-#: shop/templates/services.html:50
-msgid "на чотири етапи:"
-msgstr ""
-
-#: shop/templates/services.html:72
-msgid "відображення всіх побажань "
-msgstr ""
-
-#: shop/templates/services.html:73
-msgid "клієнта у віртуальному просторі"
-msgstr ""
-
-#: shop/templates/services.html:96
-msgid "погодження"
-msgstr ""
-
-#: shop/templates/services.html:98
-msgid "макету"
-msgstr ""
-
-#: shop/templates/services.html:121
-msgid "редагування та внесення правок"
-msgstr ""
-
-#: shop/templates/services.html:123
-msgid "після узгодження  з замовником"
-msgstr ""
-
-#: shop/templates/services.html:146
-msgid "реалізація та втілення "
-msgstr ""
-
-#: shop/templates/services.html:147
-msgid "проекту у життя"
 msgstr ""
 
 #: venv/lib/python3.7/site-packages/ckeditor_uploader/forms.py:6
@@ -1917,4 +1946,10 @@ msgstr ""
 #: venv/lib/python3.7/site-packages/dynamic_content/admin.py:21
 #: venv/lib/python3.7/site-packages/dynamic_content/models.py:30
 msgid "Content (html)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/bootstrap4/components.py:17
+#: venv/lib/python3.9/site-packages/bootstrap4/templates/bootstrap4/form_errors.html:3
+#: venv/lib/python3.9/site-packages/bootstrap4/templates/bootstrap4/messages.html:4
+msgid "close"
 msgstr ""
