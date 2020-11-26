@@ -3,14 +3,16 @@
 {% load i18n %}
 {% block content %}
     <title>{% block title %} MainPage{% endblock %}</title>
+{% block styles%}
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href={% static "/source/lib/slick/slick.min.css" %}>
-    <link rel="stylesheet" href={% static "/source/pages//main/index.css" %} />
-    <link rel="stylesheet" href={% static "/source/pages/main/index.css.map" %} />
-  </head>
+    <link rel="stylesheet" href="/static/source/lib/slick/slick.min.css">
+    <link rel="stylesheet" href="/static/source/pages/main/index.css" />
+    <link rel="stylesheet" href="/static/source/pages/main/index.css.map" />
+{% endblock styles%}
+
       <main class="">
       <div class="main_background "></div>
       <div class="slider_hero__box my-50">
@@ -29,11 +31,12 @@
 
     {% include "includes/mainpage/ourbrand.html" %}  
 
-    <script src={% static "/source/lib//jquery/index.js" %}></script>
-    <script src={% static "/source/lib/slick/slick.js" %}></script> 
-    <script src={% static "/source/lib/maskinput/maskinput.js" %}></script> 
-    <script src={% static "/source/lib/validation/validation.min.js" %}></script> 
-    <script src={% static "/source/pages/main/index.js.map" %}></script>
-    <script src={% static "/source/pages/main/index.js" %}></script>
-
+{% block scripts %}
+    <script src="/static/source/lib/jquery/index.js"></script>
+    <script src="/static/source/lib/slick/slick.js"></script> 
+    <script src="/static/source/lib/maskinput/maskinput.js"></script> 
+    <script src="/static/source/lib/validation/validation.min.js"></script> 
+    <script src="/static/source/pages/main/index.js.map"></script>
+    <script src="/static/source/pages/main/index.js"></script>
+{% endblock scripts %}
 {% endblock %}

@@ -1,4 +1,7 @@
 {% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
 {% load static %}
 
 <body class="is_front_page">
@@ -8,14 +11,14 @@
           <div class="logo">
             <a class="logo_desctop" href="#">
               <img
-                src={% static "/source/svg_icon/header/logo_Philosofiy_Svitla.svg" %}
+                src="/static/source/svg_icon/header/logo_Philosofiy_Svitla.svg"
                 alt=""
                 srcset=""
               />
             </a>
             <a class="logo_mobil" href="#">
               <img
-                src={% static "/source/svg_icon/logo_mobil_w.svg" %}
+                src="/static/source/svg_icon/logo_mobil_w.svg" 
                 alt=""
                 srcset=""
               />
@@ -61,27 +64,33 @@
             </ul>
           </div>
 
-          <div class="leng">
+            <div class="leng">
             <li class="nav-item dropdown">
-              <!-- Toggle -->
-              
-              
-              <a class="nav-link" href="#">ENG</a>
+              <a class="nav-link">
+              {% if LANGUAGE_CODE == 'en' %}
+              ENG
+              {% elif LANGUAGE_CODE == 'uk' %}
+              УКР
+              {% endif %}
               <div class="icon">
                 <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 0.5L4.01538 3.5L7 0.5" stroke="#ADB7D0" stroke-linecap="round"/>
                   </svg>
+              </a>
                   
               </div>
 
               <!-- Menu -->
 
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="/uk/{{ request.get | cut:'/en/' }}">УКР</a>
-                <a class="dropdown-item" href="/en/{{ request.get | cut:'/ua/' }}">ENG</a>
+                {% if LANGUAGE_CODE == 'en' %}
+                <a class="dropdown-item" href="/uk/{{ request.get_full_path |cut:"/en/" }}">УКР</a>
+                {% elif LANGUAGE_CODE == 'uk' %}
+                <a class="dropdown-item" href="/en/{{ request.get_full_path |cut:"/uk/" }}">ENG</a>
+                {% endif %}
             </li>
           </div>
-</form>
+          
 
           <ul class=" navbar_small flex-row">
             <li class="  nav-item">
@@ -112,7 +121,7 @@
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none"  >
                       <path d="M13 1.5C15.9008 1.5 18.25 3.84916 18.25 6.75C18.25 9.65084 15.9008 12 13 12C10.0992 12 7.75 9.65084 7.75 6.75C7.75 3.84916 10.0992 1.5 13 1.5ZM24.5 22.375L24.5 22.376C24.5001 22.3938 24.5006 22.4822 24.3044 22.6539C24.0913 22.8403 23.729 23.0453 23.1958 23.2453C22.1356 23.6429 20.6664 23.9245 19.126 24.1171C17.6005 24.3078 16.0677 24.4039 14.9115 24.452C14.3346 24.4761 13.8544 24.4881 13.5193 24.4941C13.3517 24.497 13.2206 24.4985 13.132 24.4993L13.0318 24.4999L13.0071 24.5L13.0013 24.5L13.0001 24.5H13.0001H12.9999H12.9999L12.9987 24.5L12.9929 24.5L12.9682 24.4999L12.868 24.4993C12.7794 24.4985 12.6483 24.497 12.4807 24.4941C12.1456 24.4881 11.6654 24.4761 11.0885 24.452C9.93226 24.4039 8.39946 24.3078 6.87403 24.1171C5.33359 23.9245 3.8644 23.6429 2.80425 23.2453C2.27097 23.0453 1.90866 22.8403 1.69561 22.6539C1.49942 22.4822 1.4999 22.3938 1.5 22.376L1.5 22.375C1.5 21.0211 2.65504 19.33 4.88591 17.9053C7.05636 16.5191 9.99574 15.5625 13 15.5625C16.0043 15.5625 18.9436 16.5191 21.1141 17.9053C23.345 19.33 24.5 21.0211 24.5 22.375Z" stroke="#ADB7D0" stroke-width="2"/>
                       </svg>
-
+<!-- Profile -->
                     <div class="">{% trans "Особистий кабінет" %}</div>
                   </div>
                   <div class="acounts_modal__main">
@@ -135,6 +144,8 @@
                     </form>
                   </div>
                 </div>
+
+<!-- Register -->
                 <div class="acounts_form acounts_register">
                   <div class="acounts_modal__header">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,7 +232,7 @@
                     <div class="text"></div>
                     <div class="icon">
                       <div class="icon">
-                        <img src={% static "/source/svg_icon/arrow_short.svg" %} alt="" srcset="">
+                        <img src="/static/source/svg_icon/arrow_short.svg" alt="" srcset="">
                       </div>
                     </div>
                   </div>
